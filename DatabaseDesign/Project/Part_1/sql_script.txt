@@ -1,0 +1,72 @@
+create table customer
+(	cid int not null,
+	cLastName varchar(30) not null,
+	cFirstName varchar(30) not null,
+		primary key(cid)
+);
+
+create table payment
+(	pid varchar(10) not null,
+	meansOfPayment varchar(30) not null,
+		primary key(pid)
+);
+
+create table position
+(	posCat varchar(10) not null,
+	posArea int not null,
+	posCost int not null,
+		check(posCost > 0 and posArea > 0),
+		primary key(posCat)
+);
+
+create table employee
+(	empid int not null,
+	empLastName varchar(30) not null,
+	empFirstName varchar(30) not null,
+		primary key(empid)
+);
+
+create table reservation
+(	rid int not null,
+	cid int not null,
+	empid int not null,
+	pid varchar(10) not null,
+	regDate date not null,
+	conNum varchar(30) not null,
+	totalCost int not null,
+		check(totalCost > 0),
+		primary key(rid),
+		constraint fk1_reservation foreign key(cid) references customer(cid),
+		constraint fk2_reservation foreign key(pid) references payment(pid),
+		constraint fk3_reservation foreign key(empid) references employee(empid)
+);
+
+create table camp
+(	campid int not null,
+	campName varchar(30) not null,
+	campCap int,
+	campTyp varchar(30),
+		check(campCap > 0),
+		primary key(campid)
+);
+
+create table posCategory
+(	campid int not null,
+	posNum int not null,
+	posCat varchar(10) not null,
+		check(posNum > 0),
+		primary key(campid, posNum),
+		constraint fk1_posCategory foreign key(posCat) references position(posCat)
+);
+
+create table extraInformation
+(	rid int not null,
+	campid int not null,
+	posNum int not null,
+	stDt date not null,
+	expDt date not null,
+	peopleNum int not null,
+	cost int not null,
+		check(peopleNum > 0 and cost > 0 and posNum > 0),
+		primary key(rid, campid, posNum)
+);
