@@ -1,0 +1,703 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+/* index.html */
+.header {
+  background-color: black;
+}
+
+.banner-userActions {
+  display: flex;
+  flex-direction: row;
+}
+
+.banner {
+  width: 85%;
+  text-align: left;
+}
+
+.name p {
+  font-family: my_font;
+  font-size: x-large;
+  padding: 10px;
+  color: white;
+}
+
+.userActions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 15%;
+}
+
+.actions {
+  background-color: #fbd754;
+  text-transform: capitalize;
+  border: none;
+  height: 42px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.actions a {
+  color: black;
+  font-weight: bold;
+}
+
+#register {
+  margin-right: 10px;
+}
+
+#log-in {
+  margin-left: 10px;
+}
+
+/* loggedin.html */
+#myBookmarks {
+  margin-right: 10px;
+}
+
+#logout {
+  margin-left: 10px;
+}
+
+#res-col-loggedin {
+  padding-top: 100px;
+}
+
+#user-msg {
+  padding-bottom: 200px;
+}
+
+.srch_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+#movie-field {
+  width: 30%;
+  height: 70px;
+  padding-left: 10px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid #999;
+  border-radius: 5px;
+  outline: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.movie-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 100px 0px 100px 0px;
+}
+
+.poster {
+    padding: 0px 50px;
+    width: 400px;
+    height: 400px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding-left: 100px;
+}
+/* loggedin.html */
+
+/* my_bookmarks.html */
+.movie_box {
+    height: 700px;
+    background-image: url(./images/cinema.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    justify-content: center;
+}
+
+.next_prev_Btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+/* my_bookmarks.html */
+
+.results {
+  height: 900px;
+  background-image: url(./images/cinema.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.res-col {
+  padding-top: 200px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+.res-col h1 {
+  font-family: my_font;
+  text-transform: uppercase;
+  font-size: 36px;
+  letter-spacing: 10px;
+}
+
+.res-col #text {
+  margin-top: 100px;
+  width: 70%;
+  font-size: 18px;
+  letter-spacing: 1px;
+  word-spacing: 1.5px;
+}
+
+.movies {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  background-color: #cec3c1;
+}
+
+.backgr-img {
+  background-image: url(./images/movies.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 70%;
+  height: 100%;
+}
+
+.footer {
+  padding-top: 50px;
+  color: white;
+  background-color: black;
+}
+
+.mediaIcons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.media-icons-list li {
+  cursor: pointer;
+  display: inline;
+}
+
+.contact-cpright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0px;
+}
+
+.contact a:hover {
+  font-style: italic;
+}
+
+.cpright {
+  width: 100%;
+  margin-top: 30px;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.cpright p {
+  width: 40%;
+  padding: 10px 0px;
+  text-align: center;
+  justify-self: center;
+  border-top: 1px solid white;
+}
+
+/* GRID LAYOUT */
+.wrapper-hm {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header header header header"
+    "main main main main"
+    "footer footer footer footer";
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+/* GRID LAYOUT */
+
+/* index.html */
+
+/* login.html and register.html */
+.wrapper-act {
+  height: 100%;
+  width: 100%;
+  background-image: url(./images/cinema.jpg);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+}
+
+.form-box {
+  width: 380px;
+  height: 480px;
+  position: relative;
+  margin: 6% auto;
+  background-color: white;
+  padding: 5px;
+  overflow: hidden;
+}
+
+.button-box {
+  width: 220px;
+  margin: 35px auto;
+  position: relative;
+  box-shadow: 0 0 20px 9px #ff61241f;
+  border-radius: 30px;
+}
+
+.toggle-btn {
+  padding: 10px 30px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+}
+
+#btnReg {
+  left: 0;
+}
+
+#btnLogin {
+  left: 110px;
+}
+
+.btn {
+  top: 0;
+  position: absolute;
+  width: 110px;
+  height: 100%;
+  background: linear-gradient(to right, #ff105f, #ffad06);
+  border-radius: 30px;
+  transition: 0.5s;
+}
+
+.social-icons {
+  margin: 30px auto;
+  text-align: center;
+}
+
+.social-icons img {
+  width: 30px;
+  margin: 0 12px;
+  box-shadow: 0 0 20px 0 #7f7f7f3d;
+  cursor: pointer;
+  border-radius: 40%;
+}
+
+.input-group {
+  top: 180px;
+  position: absolute;
+  width: 280px;
+  transition: 0.5s;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px 0px;
+  margin: 5px 0px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid #999;
+  outline: none;
+  background: transparent;
+}
+
+.submit-btn {
+  width: 85%;
+  padding: 10px 30px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  background: linear-gradient(to right, #ff105f, #ffad06);
+  border: 0;
+  outline: none;
+  border-radius: 30px;
+  margin-top: 25px;
+}
+
+.check-box {
+  margin: 30px 10px 30px 0px;
+}
+
+span {
+  color: #777;
+  font-size: 12px;
+  bottom: 68px;
+}
+
+#login-in_register {
+  left: 450px;
+}
+
+#login-in_login {
+  left: 50px;
+}
+
+#reg-in_register {
+  left: 50px;
+}
+
+#reg-in_login {
+  left: 450px;
+}
+
+.cpright-act {
+  text-align: center;
+}
+
+/* GRID LAYOUT */
+.wrapper-act {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header header header header"
+    "main main main main"
+    "footer footer footer footer";
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+/* GRID LAYOUT */
+
+/* login.html and register.html */
+
+/* FONT-FACE */
+@font-face {
+  font-family: my_font;
+  src: url(Lobster-Regular.ttf);
+}
+/* FONT-FACE */
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1800px) {
+  #banner-lgg {
+    width: 80%;
+  }
+
+  #userActions-lgg {
+    width: 20%;
+  }
+
+  #movie-field {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  #banner-lgg {
+    width: 75%;
+  }
+
+  #userActions-lgg {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .banner {
+    width: 80%;
+  }
+
+  .userActions {
+    width: 20%;
+  }
+
+  .backgr-img {
+    width: 80%;
+  }
+
+  .form-box {
+    width: 360px;
+    height: 460px;
+  }
+
+  .button-box {
+    width: 200px;
+  }
+
+  .toggle-btn {
+    padding: 10px 25px;
+  }
+
+  #btnReg {
+    left: 0;
+  }
+
+  #btnLogin {
+    left: 100px;
+  }
+
+  .btn {
+    width: 100px;
+  }
+
+  .input-group {
+    width: 260px;
+  }
+
+  .submit-btn {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .banner {
+    width: 75%;
+  }
+
+  .userActions {
+    width: 25%;
+  }
+
+  #banner-lgg {
+    width: 70%;
+  }
+
+  #userActions-lgg {
+    width: 30%;
+  }
+
+  #movie-field {
+    width: 45%;
+  }
+
+  .backgr-img {
+    width: 90%;
+  }
+
+  .movie-details {
+      flex-direction: column;
+      align-items: center;
+      padding-top: 30px;
+    }
+
+    .poster {
+      margin-bottom: 80px;
+      padding: 0px;
+    }
+
+    .details {
+      padding: 0px;
+      width: 90%;
+    }
+
+    .results {
+      height: 1100px;
+    }
+
+    .movie_box {
+        height: 900px;
+    }
+
+    #movie_box {
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+  #banner-lgg {
+    width: 65%;
+  }
+
+  #userActions-lgg {
+    width: 35%;
+  }
+
+  .backgr-img {
+    width: 100%;
+  }
+
+  .cpright p {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .banner {
+    width: 65%;
+  }
+
+  .userActions {
+    width: 35%;
+  }
+
+  #banner-lgg {
+    width: 60%;
+  }
+
+  #userActions-lgg {
+    width: 40%;
+  }
+
+  .res-col {
+    padding-top: 150px;
+  }
+
+  .movies {
+    height: 400px;
+  }
+
+  .backgr-img {
+    background-image: url(./images/rsz_movies.jpg);
+  }
+
+  .form-box {
+    width: 340px;
+    height: 440px;
+  }
+
+  .button-box {
+    width: 180px;
+  }
+
+  .toggle-btn {
+    padding: 10px 20px;
+  }
+
+  #btnReg {
+    left: 0;
+  }
+
+  #btnLogin {
+    left: 90px;
+  }
+
+  .btn {
+    width: 90px;
+  }
+
+  .input-group {
+    width: 240px;
+  }
+
+  .submit-btn {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  #banner-lgg {
+    width: 55%;
+  }
+
+  #userActions-lgg {
+    width: 45%;
+  }
+
+  #movie-field {
+    width: 50%;
+  }
+
+  .backgr-img {
+    background-image: url(./images/rsz_1rsz_movies.jpg);
+  }
+
+  .cpright p {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .banner-userActions {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .banner {
+    text-align: center;
+    width: 100%;
+  }
+
+  .userActions {
+    width: 100%;
+    padding: 10px 0px;
+    justify-content: center;
+  }
+
+  #banner-lgg {
+    text-align: center;
+    width: 100%;
+  }
+
+  #userActions-lgg {
+    padding: 10px 0px;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .res-col {
+    padding-top: 100px;
+  }
+
+  .cpright p {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .backgr-img {
+    background-image: url(./images/rsz_2rsz_movies.jpg);
+  }
+
+  .cpright p {
+    width: 80%;
+  }
+}
+/* MEDIA QUERIES */

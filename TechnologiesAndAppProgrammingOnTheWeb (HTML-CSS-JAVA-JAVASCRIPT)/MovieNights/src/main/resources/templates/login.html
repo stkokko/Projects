@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>MovieNights | Log in</title>
+</head>
+
+<body>
+<!-- .wrapper -->
+<div class="wrapper-act">
+    <!-- HEADER -->
+    <header>
+        <div class="header">
+            <div class="banner">
+                <div class="name">
+                    <p>
+                        <a href="/">MovieNights</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER -->
+
+    <!-- MAIN -->
+    <main>
+        <!-- .form-box -->
+        <div class="form-box">
+            <!-- .button-box -->
+            <div class="button-box">
+                <div class="btn" id="btnLogin"></div>
+                <button type="button" class="toggle-btn" onclick="registerForm()">
+                    Register
+                </button>
+                <button type="button" class="toggle-btn" onclick="loginForm()">
+                    Log In
+                </button>
+            </div>
+            <!-- .button-box -->
+            <!-- .social-icons -->
+            <div class="social-icons">
+                <img src="./icons/facebook.png" alt="fb" />
+                <img src="./icons/instagram.png" alt="in" />
+                <img src="./icons/twitter.png" alt="tw" />
+            </div>
+            <!-- .social-icons -->
+            <!-- register form -->
+            <form action="/register" id="reg-in_login" class="input-group">
+                <input
+                        type="email"
+                        class="input-field"
+                        id="emailRegForm"
+                        name="email"
+                        placeholder="Email"
+                        required
+                />
+                <input
+                        type="password"
+                        class="input-field"
+                        id="passwordRegForm"
+                        name="password"
+                        placeholder="Password"
+                        required
+                />
+                <input
+                        type="password"
+                        class="input-field"
+                        id="confirmPasswordRegForm"
+                        placeholder="Confirm password"
+                        required
+                />
+                <input
+                        type="checkbox"
+                        class="check-box"
+                        id="checkBoxRegForm"
+                        required
+                /><span>I agree to the terms & conditions</span>
+                <button
+                        type="submit"
+                        class="submit-btn"
+                >
+                    Register
+                </button>
+            </form>
+            <!-- register form -->
+            <!-- log-in form -->
+            <form action="/login" id="login-in_login" class="input-group">
+                <input
+                        type="email"
+                        class="input-field"
+                        id="emailLoginForm"
+                        name="email"
+                        placeholder="Email"
+                        required
+                />
+                <input
+                        type="password"
+                        class="input-field"
+                        id="passwordLoginForm"
+                        name="password"
+                        placeholder="Password"
+                        required
+                />
+                <button
+                        type="submit"
+                        class="submit-btn"
+                        id="submit-btn-login"
+                >
+                    Log in
+                </button>
+            </form>
+            <!-- login form -->
+        </div>
+        <!-- .form-box -->
+    </main>
+    <!-- MAIN -->
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer">
+            <div class="cpright-act">
+                <p>
+                    &copy; Copyright 2020
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER -->
+</div>
+<!-- .wrapper -->
+<script src="action.js"></script>
+</body>
+</html>

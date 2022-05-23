@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>MovieNights | My Bookmarks</title>
+</head>
+<body onload="getBookmarks()">
+<!-- .wrapper -->
+<div class="wrapper-hm">
+    <!-- HEADER -->
+    <header>
+        <div class="header">
+            <div class="banner-userActions">
+                <div class="banner" id="banner-lgg">
+                    <div class="name">
+                        <p>
+                            <a href="/loggedin">MovieNights</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="userActions" id="userActions-lgg">
+                    <div class="actions" id="myBookmarks">
+                        <a href="/my_bookmarks">My bookmarks</a>
+                    </div>
+                    <div class="actions" id="logout">
+                        <!-- onclick we must log out the user and return him to the index.html -->
+                        <a href="/login_form" onclick="">Log out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER -->
+
+    <!-- MAIN -->
+    <main>
+        <div class="main">
+            <div class="movie_box">
+                <h1 class="bookmarksMsg">
+
+                </h1>
+                <div class="movie-details" id="movie_box">
+                    <div class="poster"></div>
+                    <div class="details"></div>
+                </div>
+                <div class="next_prev_Btn">
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- MAIN -->
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer">
+            <div class="contact-cpright">
+                <div class="contact">
+                    <div class="con-details">
+                        <table>
+                            <tr>
+                                <th colspan="2">Contact details</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Phone number:</p>
+                                </td>
+                                <td><a href="tel:+6948521458">6948521458</a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Email address:</p>
+                                </td>
+                                <td>
+                                    <a href="mailto:stelioskokko@yahoo.gr"
+                                    >stelioskokko@yahoo.gr</a
+                                    >
+                                </td>
+                            </tr>
+                        </table>
+                        <div class="mediaIcons">
+                            <ul class="media-icons-list">
+                                <li><img src="./icons/facebook.png" alt="fb" /></li>
+                                <li><img src="./icons/instagram.png" alt="in" /></li>
+                                <li><img src="./icons/twitter.png" alt="tw" /></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="cpright">
+                    <p>
+                        &copy; Copyright 2020
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER -->
+</div>
+<!-- .wrapper -->
+<script src="bookmarks.js"></script>
+</body>
+</html>
