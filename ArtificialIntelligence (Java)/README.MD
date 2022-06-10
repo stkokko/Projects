@@ -18,6 +18,8 @@ On this project every member of our team had to choose one of the following lear
 email as spam or not, having first used at least one of the three (in total) data sets were given to train our algorithm. We
 implemeted BAYES, ID3 and Logistic.
 
+<br />
+
 * BAYES
 * ID3
 * Logistic
