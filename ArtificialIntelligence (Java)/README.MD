@@ -2,6 +2,7 @@
 
 <h4>Project_1</h4>
 On this project we had to create the game 'Reversi', so the user could play against the computer. Below is an input-output example of the game.
+
 ![alt text](https://github.com/stkokko/Projects/blob/master/ArtificialIntelligence%20(Java)/images/Project_1/game1.png)
 
 <hr>
