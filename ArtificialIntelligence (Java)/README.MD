@@ -16,7 +16,7 @@ On this project we had to create the game 'Reversi', so the user could play agai
 <h4>Project_2</h4>
 On this project every member of our team had to choose one of the following learning algorithms. The goal was to classify an 
 email as spam or not, having first used at least one of the three (in total) data sets were given to train our algorithm. We
-implemeted BAYES, ID3 and Logistic.
+implemeted BAYES, ID3 and Logistic.\
 \
 * BAYES
 * ID3
