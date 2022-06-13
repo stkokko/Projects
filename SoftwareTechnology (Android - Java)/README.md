@@ -24,4 +24,4 @@
 
 [Διάγραμμα Κλάσεων Περιγραφή Στατικής Όψης](https://github.com/stkokko/Projects/blob/master/SoftwareTechnology%20(Android%20-%20Java)/requirements/JUnit%20Test/class-diagram-design.md)
 
-[JUnit Test](https://gitlab.com/softeng-2019-20/quiz-challenge/-/blob/master/requirements/JUnit%20Test/test-coverage.md)
+[JUnit Test](https://github.com/stkokko/Projects/blob/master/SoftwareTechnology%20(Android%20-%20Java)/requirements/JUnit%20Test/test-coverage.md)
