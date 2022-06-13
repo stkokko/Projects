@@ -16,7 +16,7 @@
 επιδόσεις ανά κατηγορία ερωτήσεων και επίπεδο δυσκολίας. 
 
 
-[Σύντομη Περιγραφή περιπτώσεων χρήσης](https://gitlab.com/softeng-2019-20/quiz-challenge/-/blob/master/requirements/use-case-model.md)
+[Σύντομη Περιγραφή περιπτώσεων χρήσης](https://github.com/stkokko/Projects/blob/master/SoftwareTechnology%20(Android%20-%20Java)/requirements/use-case-model.md)
 
 [Απαιτήσεις Λογισμικού](https://gitlab.com/softeng-2019-20/quiz-challenge/-/blob/master/requirements/software-requirements.md)
 
