@@ -18,7 +18,7 @@
 
 [Σύντομη Περιγραφή περιπτώσεων χρήσης](https://github.com/stkokko/Projects/blob/master/SoftwareTechnology%20(Android%20-%20Java)/requirements/use-case-model.md)
 
-[Απαιτήσεις Λογισμικού](https://gitlab.com/softeng-2019-20/quiz-challenge/-/blob/master/requirements/software-requirements.md)
+[Απαιτήσεις Λογισμικού](https://github.com/stkokko/Projects/blob/master/SoftwareTechnology%20(Android%20-%20Java)/requirements/software-requirements.md)
 
 [Διάγραμμα Κλάσεων](https://gitlab.com/softeng-2019-20/quiz-challenge/-/blob/master/requirements/class-diagram-design.md)
 
